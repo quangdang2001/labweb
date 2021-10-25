@@ -44,6 +44,8 @@ public class EmailListServlet extends HttpServlet
 
             // store data in User object and save User object in database
             User user = new User(firstName, lastName, email);
+            String path = getServletContext().getRealPath("/WEB-INF/EmailList.txt");
+            UserIO.addRecord(user,path);
             
             // set User object in request object and set URL
             session.setAttribute("user", user);

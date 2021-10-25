@@ -1,2 +1,0 @@
-xyz@gmail.com|xyz|ttt
-john@gmail.com|John|Wick
