@@ -9,12 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02f72db5-4099-484a-878e-954b78c17be8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab81/email/EmailListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab81/email/EmailListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/EmailList.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/EmailList.txt" afterDir="false" />
-    </list>
+    <list default="true" id="02f72db5-4099-484a-878e-954b78c17be8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,7 +140,7 @@
       <workItem from="1635165493534" duration="723000" />
       <workItem from="1635166493542" duration="625000" />
       <workItem from="1635174908044" duration="9000" />
-      <workItem from="1635181991229" duration="75000" />
+      <workItem from="1635181991229" duration="269000" />
     </task>
     <servers />
   </component>

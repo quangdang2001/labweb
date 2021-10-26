@@ -7,11 +7,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductDAO {
-    public Connection getConnection() {
+     public Connection getConnection() {
         try {
-            String url = "jdbc:mysql://localhost:3306/shopping_cart";
-            String user = "root";
-            String password = "2211";
+            String url = "jdbc:mysql://becf340aa2d7a1:2e676f13@us-cdbr-east-04.cleardb.com/heroku_e21899dacad2c66?";
+            String user = "becf340aa2d7a1";
+            String password = "2e676f13";
             Class.forName("com.mysql.jdbc.Driver");
 
             return DriverManager.getConnection(url, user, password);
@@ -25,15 +25,15 @@ public class ProductDAO {
         Connection connection = getConnection();
         PreparedStatement statement = null;
         ResultSet resultSet = null;
-        String query = "Select * from product where code = ?";
+        String query = "Select * from product where ProductCode = ?";
         statement = connection.prepareStatement(query);
         statement.setString(1,code);
         resultSet = statement.executeQuery();
         if (resultSet.next()){
             Product product = new Product();
-            product.setCode(resultSet.getString("code"));
-            product.setDescription(resultSet.getString("description"));
-            product.setPrice(resultSet.getDouble("price"));
+            product.setCode(resultSet.getString("ProductCode"));
+            product.setDescription(resultSet.getString("ProductDescription"));
+            product.setPrice(resultSet.getDouble("ProductPrice"));
             return product;
         }
         if (connection != null)
@@ -60,9 +60,9 @@ public class ProductDAO {
 
                 while (resultSet.next()) {
                     Product product = new Product();
-                    product.setCode(resultSet.getString("code"));
-                    product.setDescription(resultSet.getString("description"));
-                    product.setPrice(resultSet.getDouble("price"));
+                    product.setCode(resultSet.getString("ProductCode"));
+                    product.setDescription(resultSet.getString("ProductDescription"));
+                    product.setPrice(resultSet.getDouble("ProductPrice"));
                     products.add(product);
                 }
                 return products;
